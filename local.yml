@@ -18,5 +18,6 @@
     - include: tasks/git-setup.yml
     - include: tasks/core-setup.yml
     - include: tasks/productivity-tools.yml
+    - include: tasks/neovim-setup.yml
     - include: tasks/zsh-setup.yml
     - include: tasks/dotfiles.yml

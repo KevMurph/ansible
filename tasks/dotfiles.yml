@@ -16,6 +16,12 @@
     - install
     - dotfiles
     - stow
+- name: Moving existing .zshrc
+  shell: mv $HOME/.zshrc $HOME/.zshrc.pre-dotfiles
+  tags:
+    - install
+    - dotfiles
+    - stow
 - name: Stow dotfiles
   shell: cd $HOME/.dotfiles && ./ubuntu
   tags:

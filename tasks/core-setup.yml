@@ -6,14 +6,13 @@
     - install
     - core
 
-- name: Install System Packages 2 (neovim, curl, htop, lsof)
+- name: Install System Packages 2 (curl, htop, lsof)
   become: true
   apt:
     name: 
       - "curl"
       - "htop"
       - "lsof"
-      - "neovim"
   tags:
     - install
     - core
