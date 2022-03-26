@@ -1,0 +1,19 @@
+- name: Install System Packages 1 (build-essential, cmake, pkg-config, pthread)
+  become: true
+  apt:
+    name: ["build-essential", "cmake", "pkg-config", "libpthread-stubs0-dev"]
+  tags:
+    - install
+    - core
+
+- name: Install System Packages 2 (neovim, curl, htop, lsof)
+  become: true
+  apt:
+    name: 
+      - "curl"
+      - "htop"
+      - "lsof"
+      - "neovim"
+  tags:
+    - install
+    - core
